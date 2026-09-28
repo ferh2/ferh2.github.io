@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fran Hardyman</title>
 <meta name="description" content="Fran Hardyman — PhD student in neuroscience at King's College London.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +20,12 @@
     --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   }
 
+  *, *::before, *::after { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  img { max-width: 100%; }
   html { background: var(--paper); }
   body {
+    margin: 0;
     background: var(--paper);
     color: var(--ink);
     font-family: var(--sans);
@@ -155,7 +164,8 @@
     * { transition: none !important; }
   }
 </style>
-
+</head>
+<body>
 <div class="wrap">
   <nav aria-label="Main">
     <ul>
@@ -194,7 +204,7 @@
       <ul class="list">
         <!-- Example entry: copy this <li> for each post -->
         <li>
-          <div class="date">2026-09</div>
+          <div class="date">09/2026</div>
           <div class="entry">
             <a class="entry-title" href="#">Title of your first post</a>
             <span class="meta">A one-line summary of the post goes here.</span>
@@ -262,3 +272,5 @@
     show(location.hash.slice(1));
   })();
 </script>
+</body>
+</html>
