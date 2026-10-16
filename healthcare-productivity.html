@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How should we measure healthcare productivity? · Fran Hardyman</title>
+<meta name="description" content="Why counting services and valuing them by cost gives only limited insight into the health the NHS produces, and what QALY-based alternatives can and can't fix.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f7f6f2;
+    --ink: #111111;
+    --muted: #6b6a66;
+    --rule: #dcdad3;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 16px 96px;
+  }
+  .back {
+    display: inline-block;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 48px;
+  }
+  .back:hover { color: var(--ink); }
+  .date {
+    color: var(--muted);
+    font-size: 15px;
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 40px 0 12px;
+  }
+  p { margin: 0 0 18px; }
+  .refs {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+  }
+  .refs h2 { margin-top: 0; }
+  .refs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.55;
+  }
+  .refs li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+  }
+  .refs a { color: var(--muted); }
+  .refs a:hover { color: var(--ink); }
+  em { font-style: italic; }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    h1 { font-size: 27px; }
+    .wrap { padding-top: 40px; }
+    .back { margin-bottom: 36px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/#blog">&larr; Blog</a>
+
+  <article>
+    <p class="date">09/2026</p>
+    <h1>How should we measure healthcare productivity?</h1>
+
+    <p>The standard measure of productivity for any sector is deceptively simple: the value of outputs divided by the value of inputs. When more can be produced from less, productivity increases. Two major bodies derive this metric from the UK health system: the Office for National Statistics (ONS) and the University of York’s Centre for Health Economics, both publishing annual reports. However, this version of productivity gives only limited insight into health.</p>
+
+    <h2>Current approaches</h2>
+    <p>On the input side, the challenge of quantifying healthcare productivity is manageable, as the government tracks health spending from centralised to local bodies. On the output side, though, difficulties arise in deciding what counts as an output, and in quantifying it. The ONS uses services provided, including prescriptions, appointments, and procedures, as units of output. Then, in order to compare GP consultations to hip replacements, both are quantified as their cost (derived from staff wages, consumables, and other expenses). This approach is appealing as service provision is directly traceable to NHS expenditure, and standardised data is available nationwide. However, the aim of the NHS is not to provide services but to improve population health, often quantified as quality-adjusted life years (QALYs). Thus wherever the cost of a service does not map to the number of QALYs bestowed, the productivity metric falls short.</p>
+
+    <h2>Using services as output</h2>
+    <p>Because outputs are services, care that improves health through other means is not counted. For example, spending on preventative measures such as statins increases totals on the input side, while the heart attacks and strokes they prevent show up only as fewer hospital admissions, leading to a seeming decrease in productivity despite a net health gain. This is a core problem for the Government's 10 Year Plan, which aims to prioritise prevention while pursuing 2% annual NHS productivity growth.</p>
+
+    <h2>Quantifying services by their cost</h2>
+    <p>Converting unit outputs to their costs likewise risks divorcing productivity from patient benefit. An expensive branded drug counts as far more output than a cheap biosimilar with identical effect. The ONS does attempt to mitigate this by applying a 'quality weighting', wherein they increase the relative value of some services if outcomes are good, for example higher survival or shorter waits. This allows the value to the patient to influence the statistic, but is limited to only some services. The fact that the ONS reports these measures at a 2-year lag also shows the complexity of this calculation.</p>
+
+    <h2>Attempted solutions</h2>
+    <p>It is tempting to consider using QALYs as the output of health expenditure, as they are a familiar metric that directly quantifies health gains. However, attributing QALYs to specific clinical interventions is difficult as there is no counterfactual. A recent study by Australia's Productivity Commission sidestepped this by studying, for each case of a disease, the change in treatment cost and QALYs gained (valued in dollars) over time. However, this approach is vulnerable to confounding changes, for example a new screening programme that could diagnose milder cases requiring less intervention, rendering treatment per case cheaper and inflating apparent productivity. Moreover, because outcomes are measured per case, prevention is again invisible: the study found falling productivity for heart disease, which its authors attributed to blood pressure medication preventing many cases altogether.</p>
+    <p>Economists at York took a slightly different approach to using QALYs as outputs, taking advantage of quasi-random variation in NHS spending to compare mortality, converted into QALYs, across areas with different funding. Interestingly, their estimates suggest a marginal QALY costs roughly £10,000, which is significantly lower than the £25,000–£35,000 per QALY NICE now accepts for new drugs. However, this study too rests on assumptions, namely that these funding variations are unrelated to underlying differences in population health, and that effects on mortality can stand in for effects on quality of life.</p>
+
+    <h2>Conclusion</h2>
+    <p>So where does this leave us? Conventional productivity is an imperfect measure of how well a health system functions, with the use of services as units of output and cost-based quantification both serious weaknesses. Approaches that use direct measures of health as the output are more theoretically sound, but proving the causal link back to inputs remains challenging. With this in mind, the Department of Health and Social Care and ONS should pursue improvements to current protocols, for example gathering the disease-specific outcome data needed for QALY-based productivity measures. Ultimately, however, the onus is on policymakers to accept that no system this complex can be judged by a single metric. Even as a new NHS productivity index is developed, policymakers must continue to weigh it against other evidence such as patient-reported outcomes and avoidable mortality.</p>
+  </article>
+
+  <section class="refs">
+    <h2>References</h2>
+    <ol>
+      <li>Australian Government Productivity Commission (2024) <em>Advances in measuring healthcare productivity</em>. Research paper. Canberra: Productivity Commission. Available at: <a href="https://www.pc.gov.au/research/completed/measuring-healthcare-productivity">https://www.pc.gov.au/research/completed/measuring-healthcare-productivity</a></li>
+      <li>Department of Health and Social Care (2025) <em>Fit for the future: 10 Year Health Plan for England</em>. CP 1350, 3 July. Available at: <a href="https://www.gov.uk/government/publications/10-year-health-plan-for-england-fit-for-the-future">https://www.gov.uk/government/publications/10-year-health-plan-for-england-fit-for-the-future</a></li>
+      <li>Martin, S., Lomas, J., Claxton, K. and Longo, F. (2021) 'How effective is marginal healthcare expenditure? New evidence from England for 2003/04 to 2012/13', <em>Applied Health Economics and Health Policy</em>, 19(6), pp. 885–903. doi:<a href="https://doi.org/10.1007/s40258-021-00663-3">10.1007/s40258-021-00663-3</a></li>
+      <li>Moody, N., Powell, T. and Harari, D. (2025) <em>NHS productivity</em>. House of Commons Library Research Briefing CBP-10313, 23 July. Available at: <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10313/">https://commonslibrary.parliament.uk/research-briefings/cbp-10313/</a></li>
+      <li>NHS Productivity Commission (2026) <em>Breaking the cycle: how to build a more productive NHS</em>. London: The Health Foundation. Available at: <a href="https://www.health.org.uk/reports-and-analysis/reports/breaking-the-cycle">https://www.health.org.uk/reports-and-analysis/reports/breaking-the-cycle</a></li>
+      <li>Office for National Statistics (2024) <em>Improved methods for total public service productivity: total, UK, 2021</em>. Methodology, 8 March. Available at: <a href="https://www.ons.gov.uk/economy/economicoutputandproductivity/publicservicesproductivity/methodologies/improvedmethodsfortotalpublicserviceproductivitytotaluk2021">https://www.ons.gov.uk/economy/economicoutputandproductivity/publicservicesproductivity/methodologies/improvedmethodsfortotalpublicserviceproductivitytotaluk2021</a></li>
+    </ol>
+  </section>
+</div>
+</body>
+</html>
