@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alchemab: A case study in new drug discovery methods · Fran Hardyman</title>
+<meta name="description" content="How Alchemab mines antibodies from disease-resilient people to find drug targets, and what its pipeline, Lilly deal and competitors mean for its prospects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f7f6f2;
+    --ink: #111111;
+    --muted: #6b6a66;
+    --rule: #dcdad3;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 16px 96px;
+  }
+  .back {
+    display: inline-block;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 48px;
+  }
+  .back:hover { color: var(--ink); }
+  .date {
+    color: var(--muted);
+    font-size: 15px;
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 40px 0 12px;
+  }
+  p { margin: 0 0 18px; }
+  .refs {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+  }
+  .refs h2 { margin-top: 0; }
+  .refs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.55;
+  }
+  .refs li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+  }
+  .refs a { color: var(--muted); }
+  .refs a:hover { color: var(--ink); }
+  em { font-style: italic; }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    h1 { font-size: 27px; }
+    .wrap { padding-top: 40px; }
+    .back { margin-bottom: 36px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/#blog">&larr; Blog</a>
+
+  <article>
+    <p class="date">07/2026</p>
+    <h1>Alchemab: A case study in new drug discovery methods</h1>
+
+    <p>A wide range of existing drugs have been developed by exploiting natural biological variation. However, this process has been bottlenecked by data extraction, analysis, and optimisation of therapies. A new class of biotechs is aiming to change this by using AI to aid more systematic searches of existing diversity. For example, the UK startup Basecamp Research has raised roughly $80 million to build its dataset of over 10 billion genes, genetic foundation model, and preclinical antibiotic candidates. In this post, though, I will focus on Alchemab.</p>
+
+    <h2>Thesis</h2>
+    <p>Alchemab is a UK biotech that has raised £109 million in Series A funding. Its unique approach to drug discovery involves identifying antibodies present in people who are at risk for a disease but do not develop it. If the same antibody is not present in patients who are susceptible to their risk factors, it may be exerting a protective effect by targeting a disease-associated antigen. One challenge is identifying antibodies targeting the same antigen across patients, as different amino acid sequences can produce the same binding site macrostructure. Alchemab addresses this by using a model trained on antibody sequences to cluster functionally convergent structures.</p>
+    <p>This approach has yielded two lead candidates so far. The first, ATLX-1282, is being developed primarily for amyotrophic lateral sclerosis (ALS) and is currently in Phase 1. It is a monoclonal antibody agonist of UNC5C, a cell-surface receptor involved in neuronal survival signalling. The second candidate, ATLX-2847, is expected to enter Phase 1 trials for muscle atrophy in late 2026. It inhibits 15-PGDH to prevent breakdown of prostaglandin E2, an intervention that has increased muscle mass and strength in mouse studies.</p>
+
+    <h2>Value</h2>
+    <p>Alchemab’s proposal to investors rests on its proprietary dataset of 6,000 samples, gathered with 30 partner institutions over 7 years and spanning neurodegeneration, immunology, oncology, and metabolic disease. This has yielded 500 million antibody protein sequences to date, and in July 2026 the company received a £25 million investment from the British Business Bank to grow this to over 1 billion sequences. However, this data is only valuable if it spawns candidates. Its lead, ATLX-1282, has been licensed to Lilly for up to $415 million plus royalties (total conditional on specified milestones), leaving venture-scale returns dependent on ATLX-2847 and other preclinical candidates (for chronic kidney disease, Alzheimer’s disease, and Huntington’s disease). These are indications with high failure rates and some crowding from competitors.</p>
+
+    <h2>Risks</h2>
+    <p>ALS patients have limited treatment options, and the development of alternatives has suffered recent expensive failures including Denali’s DNL343 and AbbVie/Calico’s fosigotifator, both failing at Phase 2/3 in early 2025. Alchemab’s candidate is targeting a novel pathway, meaning it is not exposed to the same mechanistic failure, but is still awaiting clinical validation. It should be noted that Lilly has also paid QurAlis $45 million upfront for QRL-204, an antisense therapy for ALS, so ATLX-1282 is competing within its partner’s portfolio.</p>
+    <p>Its muscle atrophy therapy faces a more direct competitor. Epirium’s small molecule MF-300, targeting 15-PGDH, is scheduled to enter Phase 2b in late 2026, with topline results expected in 2027. These may prove a double-edged sword for Alchemab: validating the target but bolstering its competitor if positive, and a serious setback if negative. Even with positive results, Alchemab is a full phase behind Epirium, so will have to compete on efficacy or indication.</p>
+
+    <h2>Conclusion</h2>
+    <p>Alchemab remains at an early stage, with much resting on the efficacy of its lead candidates. However, the company has a strong moat of valuable data that will offer larger returns as it grows, and key endorsement from its partnership with Lilly. It has brought an inventive method of drug discovery to diseases with a huge unmet patient need, and is a promising company to watch. In the wider ecosystem, it remains to be seen to what extent AI-enabled drug discovery can translate through to the clinic.</p>
+  </article>
+
+  <section class="refs">
+    <h2>References</h2>
+    <ol>
+      <li>Alchemab Therapeutics (2025) <em>Alchemab Therapeutics initiates Phase 1 clinical trial of ATLX-1282 and announces Series A financing extension</em>. 9 September. Available at: <a href="https://www.alchemab.com/alchemab-therapeutics-initiates-phase-1-clinical-trial-of-atlx-1282-and-announces-series-a-financing-extension/">https://www.alchemab.com/alchemab-therapeutics-initiates-phase-1-clinical-trial-of-atlx-1282-and-announces-series-a-financing-extension/</a></li>
+      <li>Alchemab Therapeutics (2026) <em>Pipeline</em>. Available at: <a href="https://www.alchemab.com/our-science/pipeline/">https://www.alchemab.com/our-science/pipeline/</a></li>
+      <li>Basecamp Research (2026) <em>Basecamp Research brings EDEN’s antibiotic and vaccine design models to Claude Science</em>. HPCwire, 30 June. Available at: <a href="https://www.hpcwire.com/aiwire/2026/06/30/basecamp-research-brings-edens-antibiotic-and-vaccine-design-models-to-claude-science/">https://www.hpcwire.com/aiwire/2026/06/30/basecamp-research-brings-edens-antibiotic-and-vaccine-design-models-to-claude-science/</a></li>
+      <li>British Business Bank (2026) <em>British Business Bank invests £25m in Alchemab Therapeutics, its largest direct investment in a life sciences company</em>. 8 July. Available at: <a href="https://www.british-business-bank.co.uk/news-and-events/news/british-business-bank-invests-ps25m-alchemab-therapeutics-its-largest-direct-investment-life">https://www.british-business-bank.co.uk/news-and-events/news/british-business-bank-invests-ps25m-alchemab-therapeutics-its-largest-direct-investment-life</a></li>
+      <li>Calico Life Sciences (2025) <em>Calico provides update on fosigotifator in HEALEY ALS Platform Trial</em>. 6 January. Available at: <a href="https://www.calicolabs.com/press/calico-statement-on-fosigotifator-in-healey-als-platform-trial">https://www.calicolabs.com/press/calico-statement-on-fosigotifator-in-healey-als-platform-trial</a></li>
+      <li>Denali Therapeutics (2025) <em>Denali Therapeutics announces topline results for Regimen G evaluating eIF2B agonist DNL343 in the Phase 2/3 HEALEY ALS Platform Trial</em>. 6 January. Available at: <a href="https://denalitherapeutics.gcs-web.com/node/10826">https://denalitherapeutics.gcs-web.com/node/10826</a></li>
+      <li>Epirium Bio (2026) <em>Epirium Bio announces positive Type C (End-of-Phase 1) meeting with FDA supporting advancement of MF-300 to a Phase 2b clinical trial in sarcopenia</em>. Business Wire, 27 January. Available at: <a href="https://www.businesswire.com/news/home/20260127395210/en">https://www.businesswire.com/news/home/20260127395210/en</a></li>
+      <li>Leem, J., Mitchell, L.S., Farmery, J.H.R., Barton, J. and Galson, J.D. (2022) ‘Deciphering the language of antibodies using self-supervised learning’, <em>Patterns</em>, 3(7), 100513. doi: <a href="https://doi.org/10.1016/j.patter.2022.100513">10.1016/j.patter.2022.100513</a>.</li>
+    </ol>
+  </section>
+</div>
+</body>
+</html>
